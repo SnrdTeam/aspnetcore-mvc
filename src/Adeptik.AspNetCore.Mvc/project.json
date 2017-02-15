@@ -6,7 +6,7 @@
   "description": "Adeptik ASP .NET Core MVC is a set of ASP .NET Core MVC extensions.",
 
   "packOptions": {
-    "tags": [ "command-line" ],
+    "tags": [ "aspnetcore", "aspnetcoremvc", "AspNet", "MVC", "AspNetMvc" ],
     "owners": [ "Adeptik", "Snrd" ],
     "projectUrl": "https://github.com/SnrdTeam/aspnetcore-mvc",
     "licenseUrl": "https://github.com/SnrdTeam/aspnetcore-mvc/blob/master/LICENSE",
