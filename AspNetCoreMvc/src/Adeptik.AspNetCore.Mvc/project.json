@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0-*",
+  "title": "Adeptik ASP .NET Core MVC",
+  "authors": [ "Adeptik" ],
+  "copyright": "Copyright © Adeptik",
+  "description": "Adeptik ASP .NET Core MVC is a set of ASP .NET Core MVC extensions.",
+
+  "packOptions": {
+    "tags": [ "command-line" ],
+    "owners": [ "Adeptik", "Snrd" ],
+    "projectUrl": "https://github.com/SnrdTeam/aspnetcore-mvc",
+    "licenseUrl": "https://github.com/SnrdTeam/aspnetcore-mvc/blob/master/LICENSE",
+    "releaseNotes": "Initial release"
+  },
+
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.2",
+    "NETStandard.Library": "1.6.1"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
