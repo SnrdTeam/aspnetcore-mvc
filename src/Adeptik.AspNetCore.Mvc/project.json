@@ -1,8 +1,8 @@
-{
+﻿{
   "version": "1.0.0-*",
   "title": "Adeptik ASP .NET Core MVC",
   "authors": [ "Adeptik" ],
-  "copyright": "Copyright � Adeptik",
+  "copyright": "Copyright © Adeptik",
   "description": "Adeptik ASP .NET Core MVC is a set of ASP .NET Core MVC extensions.",
 
   "packOptions": {
