@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Adeptik ASP .NET Core MVC is a set of ASP .NET Core MVC extensions.</Description>
+    <Copyright>Copyright © Adeptik</Copyright>
+    <AssemblyTitle>Adeptik ASP .NET Core MVC</AssemblyTitle>
+    <Authors>Adeptik</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Adeptik.AspNetCore.Mvc</AssemblyName>
+    <PackageId>Adeptik.AspNetCore.Mvc</PackageId>
+    <PackageTags>aspnetcore;aspnetcoremvc;AspNet;MVC;AspNetMvc</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/SnrdTeam/aspnetcore-mvc</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/SnrdTeam/aspnetcore-mvc/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>
