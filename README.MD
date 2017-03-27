@@ -1,17 +1,20 @@
 # Adeptik ASP .NET Core MVC
-A set of ASP .NET Core MVC extensions.
 
-## Installation
+Набор расширений для ASP.NET Core MVC.
 
-In project.json file add
+## Использование
 
-```json
-"dependencies": {
-    "Adeptik.AspNetCore.Mvc": "1.0.0"
-}
-```
+Добавьте в проект зависимость NuGet "Adeptik.AspNetCore.Mvc" либо выполните в Package Manager Console команду
 
-## License
+    Install-Package Adeptik.AspNetCore.Mvc
+
+## Расширения
+
+В данной библиотеке доступны следующие расширения:
+
+  * FileCallbackResult - `ActionResult` действия, который формирует результат в виде файла на-лету.
+
+## Лицензия
 
 Copyright 2017 Adeptik
 
