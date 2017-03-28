@@ -32,12 +32,25 @@ using Adeptik.AspNetCore.Mvc.ActionResults;
 
 namespace Adeptik.AspNetCore.Mvc.Internal
 {
+    /// <summary>
+    /// Обработчик результата действия с типом file
+    /// </summary>
     internal sealed class FileCallbackResultExecutor : FileResultExecutorBase
     {
+        /// <summary>
+        /// Создание экземпляра класса <see cref="FileCallbackResultExecutor"/>
+        /// </summary>
+        /// <param name="loggerFactory"></param>
         public FileCallbackResultExecutor(ILoggerFactory loggerFactory)
             : base(CreateLogger<FileCallbackResultExecutor>(loggerFactory))
         { }
 
+        /// <summary>
+        /// Выполнение обработчика
+        /// </summary>
+        /// <param name="context">Контекст действия</param>
+        /// <param name="result">Результат действия</param>
+        /// <returns><see cref="Task"/></returns>
         public Task ExecuteAsync(ActionContext context, FileCallbackResult result)
         {
             SetHeadersAndLog(context, result);
