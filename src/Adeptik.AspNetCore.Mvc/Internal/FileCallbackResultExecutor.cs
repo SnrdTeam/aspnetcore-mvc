@@ -53,7 +53,7 @@ namespace Adeptik.AspNetCore.Mvc.Internal
         /// <returns><see cref="Task"/></returns>
         public Task ExecuteAsync(ActionContext context, FileCallbackResult result)
         {
-            SetHeadersAndLog(context, result);
+            SetHeadersAndLog(context, result, null);
             return result.Callback(context.HttpContext.Response.Body, context);
         }
     }
