@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Primitives;
+using System.Linq;
 using System.Reflection;
 
 namespace Adeptik.AspNetCore.Mvc.Middleware
@@ -17,7 +19,13 @@ namespace Adeptik.AspNetCore.Mvc.Middleware
 
             return builder.Use(async (context, next) =>
             {
-                context.Response.Headers.Add("Server", $"{assemblyName}/{assemblyVersion}");
+                var serverHeaderList = context.Response.Headers["Server"].ToList();
+
+                var serverHeaderValue = $"{assemblyName}/{assemblyVersion}";
+                serverHeaderList.Add(serverHeaderValue);
+
+                context.Response.Headers["Server"] = new StringValues(serverHeaderList.ToArray());
+
                 await next.Invoke();
             });
         }
