@@ -29,6 +29,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc;
 using Adeptik.AspNetCore.Mvc.ActionResults;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace Adeptik.AspNetCore.Mvc.Internal
 {
@@ -53,7 +54,7 @@ namespace Adeptik.AspNetCore.Mvc.Internal
         /// <returns><see cref="Task"/></returns>
         public Task ExecuteAsync(ActionContext context, FileCallbackResult result)
         {
-            SetHeadersAndLog(context, result, null);
+            SetHeadersAndLog(context, result, null, result.EnableRangeProcessing);
             return result.Callback(context.HttpContext.Response.Body, context);
         }
     }
